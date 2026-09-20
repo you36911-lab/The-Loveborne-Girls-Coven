@@ -198,6 +198,7 @@ select, input[type='radio'], input[type='radio'] + label, input[type='checkbox']
     font-weight: bold;
     font-family: var(--font-main);
     transition: transform 0.2s ease;
+    box-shadow: 0 0 3px var(--color-font-title), inset 0 0 3px var(--color-font-title);
 }
 
 .submit-btn:hover {
