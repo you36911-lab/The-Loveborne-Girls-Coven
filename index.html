@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  
+  <body>
+    <div class="form-container">
+      <img class="logo" src="logo5.png" />
+    <header>
+      <h1 id="title">Registration Form</h1>
+      <p id="description">Tell us a little about yourself and find your place among the Loveborne.</p>
+      <hr>
+    </header>
+
+    <main>
+      <form id="survey-form">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label class="column" id="name-label">Name:
+          <input id="name" type="text" name="name" required placeholder="e.g. Wysteria">
+          </label>
+
+          <label class="column" id="email-label">Email:
+            <input id="email" type="email" name="email" required placeholder="example@email.com">
+          </label>
+
+          <label class="column" id="number-label">Birth Year:
+            <input id="number" type="number" name="birth-year" min="1920" max="2023" required placeholder="2000">
+          </label>
+        </fieldset>
+        
+        <fieldset>
+          <legend>Tell Us About Your Magic</legend>
+          <label class="column">Choose Your Magical Path (Community):
+            <select id="magical-path" name="magical-path">
+              <option value="coven-of-bloom">Coven of Bloom</option>
+              <option value="starlit-vanguard">Starlit Vanguard</option>
+              <option value="dreamshell-court">Dreamshell Court</option>
+              <option value="academy-of-arcana">Academy of Arcana</option>
+              <option value="velvet-eclipse">Velvet Eclipse</option>
+            </select>
+          </label>
+
+          <label class="column">Choose Your Magic Hour:
+            <select id="magic-hour" name="magic-hour">
+              <option value="sunrise">Sunrise</option>
+              <option value="noon">Noon</option>
+              <option value="twilight">Twilight</option>
+              <option value="nightfall">Nightfall</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Tell Us About Your Familiar</legend>
+          <p>Do You Have a Registered Familiar?
+            <div class="radio-options">
+            <input id="yes-option" type="radio" value="yes" name="choice-familiar" checked>
+            <label for="yes-option">Yes</label>
+
+            <input id="no-option" type="radio" value="no" name="choice-familiar">
+            <label for="no-option">No</label>
+          </div>
+          </p>
+
+          <label class="column">Choose Your Familiar:
+            <select id="familiar" name="familiar">
+              <option value="cat">Cat</option>
+              <option value="deer">Deer</option>
+              <option value="dog">Dog</option>
+              <option value="dove">Dove</option>
+              <option value="fox">Fox</option>
+              <option value="owl">Owl</option>
+              <option value="raccoon">Raccoon</option>
+              <option value="rat">Rat</option>
+              <option value="snail">Snail</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Tell Us About Your Magical Tools</legend>
+          <p>Which Crystal Does Your (Registered) Wand Have? (Check all that apply)
+          <div class="checkbox-options">
+          <span class="option">
+    <input type="checkbox" id="amethyst" name="choice-crystal" value="amethyst" checked>
+    <label for="amethyst">Amethyst</label>
+  </span>
+  <span class="option">
+    <input type="checkbox" id="aquamarine" name="choice-crystal" value="aquamarine">
+    <label for="aquamarine">Aquamarine</label>
+  </span>
+  <span class="option">
+    <input type="checkbox" id="moonstone" name="choice-crystal" value="moonstone">
+    <label for="moonstone">Moonstone</label>
+  </span>
+  <span class="option">
+    <input type="checkbox" id="obsidian" name="choice-crystal" value="obsidian">
+    <label for="obsidian">Obsidian</label>
+  </span>
+  <span class="option">
+    <input type="checkbox" id="rose-quartz" name="choice-crystal" value="rose-quartz">
+    <label for="rose-quartz">Rose Quartz</label>
+  </span>
+  <span class="option">
+    <input type="checkbox" id="tigers-eye" name="choice-crystal" value="tigers-eye">
+    <label for="tigers-eye">Tiger's Eye</label>
+  </span>
+          </div>
+          </p>
+
+          <label class="column">Choose Your Birthstone:
+            <select id="birthstone" name="birthstone">
+              <option value="garnet">Garnet</option>
+              <option value="amethyst">Amethyst</option>
+              <option value="bloodstone">Bloodstone</option>
+              <option value="diamond">Diamond</option>
+              <option value="emerald">Emerald</option>
+              <option value="pearl">Pearl</option>
+              <option value="ruby">Ruby</option>
+              <option value="sardonyx">Sardonyx</option>
+              <option value="sapphire">Sapphire</option>
+              <option value="opal">Opal</option>
+              <option value="topaz">Topaz</option>
+              <option value="turquoise">Turquoise</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Tell Us About Yourself</legend>
+
+          <label class="self-intro" for="self-intro">Give us a brief insight into who you are, what kind of witch you aspire to be, and why magic is so important to you!
+          <textarea cols="50" rows="10" name="self-intro" id="self-intro" placeholder="I am currently an apprentice witch with vibrant personality and equally vibrant magic. I want to become a skillful celestial witch..."></textarea></label>
+        </fieldset>
+
+        <button id="submit" type="submit" class="submit-btn">Submit</button>
+      </form>
+    </main>
+    </div>
+
+    <footer>@ The Loveborne Girls’ Coven</footer>
+  </body>
+</html>
